@@ -1,0 +1,180 @@
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox сторінка</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #172033;
+      background: #f3f7fb;
+      text-align:center;
+    }
+
+    .page {
+      margin: 0;
+      padding: 20px;
+      background: #f2f2f2;
+    }
+
+    header, footer {
+      text-align: center;
+      background: #1f7a8c;
+      color: white;
+    }
+
+    header {
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    ul{
+        margin: 0;
+        padding:0;
+      }
+    ul li{
+          List-style: none;}
+    a{
+      text-decoration: none;
+      }
+
+      nav {
+            background-color: rgb(0, 187, 197);
+            border-color:rgb(0, 115, 186);
+            min-height: 54px;
+            }
+            
+      nav li{
+            float: left;
+            width: 100px;
+            }
+
+      nav a{
+            display: block;
+            Line-height: 4em;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+      }
+
+      nav li a:hover{
+            color: rgb(255, 3, 3);
+            background-color: rgb(98, 203, 0);
+      }
+
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 16px;
+    }
+
+    .box {
+
+      flex: 0 0 calc(33.33% - 10px);
+      min-height: 250px;
+      padding: 20px;
+      border: 1px solid gray;
+      background: white;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .box img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .box h2 {
+      margin: 10px 0;
+      font-size: 22px;
+      color: #12355b;
+    }
+
+    .box p {
+      margin: 0;
+      max-width: 260px;
+      line-height: 1.5;
+    }
+
+    footer {
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Мої улюблені тварини</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="about.html">Про нас</a></li>
+        <li><a href="form.html">Контакти</a></li>
+        <li><a href="gallery.html">Галерея</a></li>
+      </ul>
+    </nav>
+    <p>На цій  сторінці я відобразив моїх улюблених домашніх тваринок</p>
+    <div class="container">
+      <div class="box">
+        <img src="https://zoocomplex.com.ua/image/catalog/blog/article-id-542/article-id-542-02.webp" alt="Кіт">
+        <h2>Кіт</h2>
+        <p>Коти дуже милі, спокійні та люблять відпочивати. Хоч у мене на них алергія</p>
+      </div>
+
+      <div class="box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl6m0rGCUrySkLFliL8avh-8kGDQjtuMCEKg&s" alt="Собака">
+        <h2>Собака</h2>
+        <p>Собаки вірні, активні та люблять гратися з людьми.</p>
+      </div>
+
+      <div class="box">
+        <img src="https://obukhiv.info/site/assets/files/89966/436945396_1830172880797048_1796323327232350876_n.1000x1000-ms.webp?2qwenn" alt="Птах">
+        <h2>Птах</h2>
+        <p>Птахи красиво співають і можуть літати високо в небі.</p>
+      </div>
+
+      <div class="box">
+        <img src="https://goodzoo.com.ua/photos/offers/10548dba0453b11eba054bf09780e3b46.jpg" alt="Кролик">
+        <h2>Кролик</h2>
+        <p>Кролики дуже гарні пухнасті, домашні тваринки</p>
+      </div>
+
+      <div class="box">
+        <img src="https://images.zakupka.com/i3/firms/27/10830/10830499/siriyskiy-homyak-homyachok_bc79b84baff8009_800x600.webp.jpg" alt="Хомячок">
+        <h2>хомячок</h2>
+        <p>Хомячки дуже смішні маленькі домашні тваринки, з ними дуже цікаво.</p>
+      </div>
+
+      <div class="box">
+        <img src="https://priroda.navolyni.com/static-files/img/goods/24/dd/picb-2866.jpg" alt="Рибка">
+        <h2>рибка</h2>
+        <p>Рибки дуже гарні, різнобарвні та розумні, за ними цікаво спостерігати.</p>
+      </div>
+    </div>
+
+
+    <footer>
+      <p>© 2026</p>
+    </footer>
+  </div>
+</body>
+</html>
