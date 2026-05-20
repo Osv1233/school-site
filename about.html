@@ -1,0 +1,221 @@
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Про нас</title>
+<style>
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+color: #172033;
+background: #f2f2f2;
+}
+
+header, footer {
+      text-align: center;
+      background: #1f7a8c;
+      color: white;
+    }
+
+header {
+      padding: 30px 20px;
+    }
+
+header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+ul{
+        margin: 0;
+        padding:0;
+      }
+ul li{
+          List-style: none;}
+a{
+      text-decoration: none;
+      }
+
+nav {
+            background-color: rgb(0, 187, 197);
+            border-color:rgb(0, 115, 186);
+            min-height: 54px;
+            }
+            
+nav li{
+            float: left;
+            width: 100px;
+            }
+
+nav a{
+            display: block;
+            Line-height: 4em;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+      }
+
+nav li a:hover{
+            color: rgb(255, 3, 3);
+            background-color: rgb(98, 203, 0);
+      }
+
+.container {
+padding: 20px;
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+}
+
+.box {
+background: white;
+border: 1px solid gray;
+padding: 20px;
+width: calc(50% - 8px);
+}
+
+.box h2 {
+margin: 0 0 8px 0;
+font-size: 16px;
+color: #1f7a8c;
+}
+
+.box p {
+margin: 0;
+font-size: 14px;
+line-height: 1.6;
+}
+
+.profile-box {
+background: white;
+border: 1px solid gray;
+padding: 20px;
+width: 100%;
+display: flex;
+align-items: center;
+}
+
+.profile-box img {
+width: 120px;
+height: 120px;
+object-fit: cover;
+}
+
+.profile-box h2 {
+margin: 0 0 8px 0;
+font-size: 16px;
+color: #1f7a8c;
+}
+
+.profile-box p {
+margin: 0 0 8px 0;
+font-size: 14px;
+line-height: 1.6;
+}
+
+.form-box {
+background: white;
+border: 1px solid gray;
+padding: 20px;
+width: 100%;
+}
+
+.form-box h2 {
+margin: 0 0 15px 0;
+font-size: 16px;
+color: #1f7a8c;
+}
+
+form {
+width: 500px;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+}
+
+input, textarea {
+width: 100%;
+padding: 8px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+textarea {
+min-height: 100px;
+}
+
+button {
+padding: 10px;
+background: #007bff;
+border: none;
+border-radius: 5px;
+color: #fff;
+font-size: 16px;
+cursor: pointer;
+}
+
+button: hover {
+background: #0056b3;
+}
+
+footer {
+font-size: 14px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Про нас</h1>
+</header>
+
+<nav>
+<ul>
+  <li><a href="index.html">Головна</a> </li>
+  <li><a href="about.html">Про нас </a></li>
+  <li><a href="gallery.html">Галерея</a></li>
+  </ul> 
+  </nav> 
+  <div class="container"> 
+    <div class="box"> 
+      <h2> Про компанію</h2> 
+      <p>Наша компанія займається розробкою веб-сайтів різного рівня складності
+      - від простих лендінгів до повноцінних багатосторінкових сайтів.</p>
+    </div>
+    <div class="box">
+      <h2>Мета проекту</h2> 
+      <p>Сайт створено в рамках уроку інформатики з метою демонстрації набутих знань та навичок у галузі веб-розробки.</p> 
+    </div>
+    <div class="box"> 
+      <h2>Чому варто обрати нас</h2> 
+      <p>Ми виконуємо роботу якісно та завжди стараємось дотримуватись дедлайнів. Також ми дуже раді виконати любі забаганки клієнта у будь який час!</p> 
+    </div> <div class="box"> 
+      <h2>Про розробника</h2> 
+      <p>Мені 16 років,навчаюсь у Львівському ліцеї ЛМР. Захоплююсь ІТ, працюю самостійно та маю вже кілька виконаних проектів.</p> 
+    </div> 
+    <div class="profile-box"> <img src="https://st.depositphotos.com/1526816/2377/v/450/depositphotos_23773003-stock-illustration-a-young-boy-using-the.jpg" ; alt="фото">
+    <div>
+  <h2> Контактна інформація</h2>
+  <p>Електронна пошта: email@gmail.com </p> 
+  <p> Телефон: +38 (098) 943-92-49</p> 
+    </div>
+<div class="form-box"> 
+<label type ="text">Ім'я:</label>
+<input type="text" id="firstName" placeholder="Ваше ім'я"> 
+<label for="email">Електронна пошта:</label> 
+<input type="email" id="email" placeholder= "example@gmail.com"> 
+<textarea id="message" placeholder="Напишіть повідомлення тут..."></textarea> 
+<button type="submit">Відправити</button> 
+</form> 
+</div> 
+</div> 
+<footer> 
+<p>© 2026 </p>
+</footer>
+</body>
+</html>
